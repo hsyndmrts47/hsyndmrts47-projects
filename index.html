@@ -6,8 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+        /* Varsayılan stil (masaüstü için) */
+        .responsive-image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Mobil cihazlar için stil */
+        @media (max-width: 768px) {
+            .responsive-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .feature.left,
+            .feature.right {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .feature.left .content,
+            .feature.right .content {
+                padding: 0;
+                margin-top: 20px;
+            }
+
+            .feature.left .image,
+            .feature.right .image {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Box alt container adjustments for mobile */
+        .box.alt.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .feature.left .content,
+        .feature.right .content {
+            flex: 1;
+        }
+
+        .feature.left .image,
+        .feature.right .image {
+            flex-shrink: 0;
+            width: 300px;
+            height: auto;
+        }
     </style>
-<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="header">
