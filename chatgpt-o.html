@@ -14,8 +14,14 @@
 
     .container {
       max-width: 960px;
-      margin: 3rem auto; /* Başlığı biraz aşağıya çekmek için */
+      margin: 0 auto; /* Başlığı biraz aşağıya çekmek için */
       padding: 2rem;
+    }
+
+    .header { /* Üstteki başlık için yeni bir sınıf eklendi */
+      background-color: #343a40; /* Koyu gri arka plan */
+      padding: 1rem 0;
+      margin-bottom: 2rem;
     }
 
     h1 {
@@ -50,8 +56,10 @@
   </style>
 </head>
 <body>
-  <div class="container"> 
-    <h1 class="text-center">Yapay Zeka Yeni Bir Boyuta Taşınıyor</h1>
+  <div class="container">
+    <div class="header">
+      <h1 class="text-center">Teknoloji Haberleri</h1>
+    </div>
     <img src="news/chatgpt-o.png" class="card-img-top" alt="Haber 1">
     <div class="haber-icerik">
       <p>Bilim insanları, yapay zeka alanında çığır açan bir gelişme kaydetti. Yeni geliştirilen algoritma, daha önce mümkün olmayan karmaşık problemleri çözebiliyor ve insan benzeri öğrenme yetenekleri sergiliyor.</p>
