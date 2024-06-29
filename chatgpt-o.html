@@ -8,30 +8,29 @@
     body {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.6;
-      background-color: #f8f9fa; /* Açık gri arka plan */
+      background-color: #212529; /* Koyu gri arka plan (Ana sayfa ile aynı) */
+      color: white; /* Metin rengi beyaz */
     }
 
     .container {
       max-width: 960px;
-      margin: 0 auto;
+      margin: 3rem auto; /* Başlığı biraz aşağıya çekmek için */
       padding: 2rem;
-      background-color: #fff; /* Beyaz içerik alanı */
-      border-radius: 8px; /* Köşeleri yuvarlat */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
     }
 
     h1 {
       font-size: 2.8rem;
       font-weight: 600;
-      color: #212529; /* Koyu gri başlık rengi */
+      color: white; /* Başlık rengi beyaz */
       margin-bottom: 1.5rem;
+      text-align: center;
     }
 
     .card-img-top {
       width: 100%;
       height: auto;
       object-fit: cover;
-      border-radius: 8px 8px 0 0; /* Üst köşeleri yuvarlat */
+      border-radius: 8px 8px 0 0; 
     }
 
     .haber-icerik {
@@ -40,18 +39,18 @@
 
     .haber-icerik p {
       font-size: 1.1rem;
-      color: #343a40; /* Koyu gri metin rengi */
     }
 
     .yazar-bilgisi {
       margin-top: 2rem;
       font-size: 0.9rem;
-      color: #6c757d; /* Gri yazar bilgisi rengi */
+      color: #adb5bd; /* Açık gri yazar bilgisi rengi */
+      text-align: right; /* Yazar bilgisini sağa yasla */
     }
   </style>
 </head>
 <body>
-  <div class="container mt-4">
+  <div class="container"> 
     <h1 class="text-center">Yapay Zeka Yeni Bir Boyuta Taşınıyor</h1>
     <img src="news/chatgpt-o.png" class="card-img-top" alt="Haber 1">
     <div class="haber-icerik">
@@ -59,7 +58,7 @@
       <p>Bu çığır açıcı gelişme, yapay zekanın gelecekteki potansiyelini daha da artırıyor. Uzmanlar, bu yeni algoritmanın tıp, mühendislik, finans ve diğer birçok alanda devrim yaratabileceğini düşünüyor.</p>
       <p>...</p>
     </div>
-    <div class="yazar-bilgisi text-end">
+    <div class="yazar-bilgisi">
       <small>Yazar: Ahmet Demir</small>
       <br>
       <small>Tarih: 29 Haziran 2024</small>
