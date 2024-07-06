@@ -3,6 +3,7 @@
 <head>
   <title>Teknoloji Haberleri</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <script>
     function yonlendir() {
       window.location.href = "https://bu-sayfanin-adresi.com"; 
@@ -43,15 +44,17 @@
       background-color: #212529;
       color: white;
     }
+
+    /* Mobil Cihazlar İçin Stil Ayarları */
     @media (max-width: 768px) { 
       .row {
-        margin: 0;
+        margin: 0; /* Satırlar arasındaki boşluğu kaldır */
       }
 
       .col-md-4 {
-        padding: 15px; 
-        width: 100%; 
-        margin-bottom: 15px;
+        padding: 15px; /* Kartlar arasına boşluk ekle */
+        width: 100%; /* Kartları tam genişliğe yay */
+        margin-bottom: 15px; /* Kartlar arasına dikey boşluk ekle */
       }
     }
   </style>
@@ -64,41 +67,37 @@
 
     <main>
       <div class="row mt-3">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-3">
-                <img src="news/yapayzeka.jpg" class="card-img-top" alt="Haber 1">
-                <div class="card-body">
-                  <h5 class="card-title">En İyi Yapay Zeka Hangisi?</h5>
-                  <p class="card-text">Günümüzde birbiri ardına piyasaya çıkan yapay zeka botları kullanıcıları kararsız bırakabiliyor. Bu siteyle hepsini deneyebilirsiniz.</p>
-                  <a href="eniyiyapayzeka.html" class="btn btn-primary">Devamını Oku</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-3">
-                <img src="news/unlulerlesohbet.jpg" class="card-img-top" alt="Haber 2">
-                <div class="card-body">
-                  <h5 class="card-title">Yapay Zekaya Yeni Bir Özellik.</h5>
-                  <p class="card-text">Mark Zuckerberg, Instagram ünlüleri ile yeni dönemde yapay zeka aracılığıyla sohbet edilebileceğini açıkladı. İşte detaylar...</p>
-                  <a href="unlulerlesohbet.html" class="btn btn-primary">Devamını Oku</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-3">
-                <img src="news/chatgpt-o.png" class="card-img-top" alt="Haber 3">
-                <div class="card-body">
-                  <h5 class="card-title">O geliyor!</h5>
-                  <p class="card-text">Yapay zeka sohbet robotunun geliştiricisi OpenAI, ses, görüntü ve metin üzerinden gerçek zamanlı mantık yürütebilen yeni modeli "GPT-4o"yu tanıttı.                  </p>
-                  <a href="chatgpt-o.html" class="btn btn-primary">Devamını Oku</a>
-                </div>
-              </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="news/yapayzeka.jpg" class="card-img-top" alt="Haber 1">
+            <div class="card-body">
+              <h5 class="card-title">En İyi Yapay Zeka Hangisi?</h5>
+              <p class="card-text">Günümüzde birbiri ardına piyasaya çıkan yapay zeka botları kullanıcıları kararsız bırakabiliyor. Bu siteyle hepsini deneyebilirsiniz.</p>
+              <a href="eniyiyapayzeka.html" class="btn btn-primary">Devamını Oku</a>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="news/unlulerlesohbet.jpg" class="card-img-top" alt="Haber 2">
+            <div class="card-body">
+              <h5 class="card-title">Yapay Zekaya Yeni Bir Özellik.</h5>
+              <p class="card-text">Mark Zuckerberg, Instagram ünlüleri ile yeni dönemde yapay zeka aracılığıyla sohbet edilebileceğini açıkladı. İşte detaylar...</p>
+              <a href="unlulerlesohbet.html" class="btn btn-primary">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="news/chatgpt-o.png" class="card-img-top" alt="Haber 3">
+            <div class="card-body">
+              <h5 class="card-title">O geliyor!</h5>
+              <p class="card-text">Yapay zeka sohbet robotunun geliştiricisi OpenAI, ses, görüntü ve metin üzerinden gerçek zamanlı mantık yürütebilen yeni modeli "GPT-4o"yu tanıttı.</p>
+              <a href="chatgpt-o.html" class="btn btn-primary">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div> 
     </main>
 
 
